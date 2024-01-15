@@ -64,8 +64,9 @@ $page = $_GET['page'] ?? "theloai";
                   exit();
             }
             else{
-                  $sql="INSERT INTO loaitin(Ten,ThuTu,AnHien,lang,idTL,MoTa)
-                  VALUES ('$name',$thutu,$anHien,'$lang',$idTL,'$MoTa')";
+               $slug = slug($name);
+                  $sql="INSERT INTO loaitin(Ten,slug, ThuTu,AnHien,lang,idTL,MoTa)
+                  VALUES ('$name','$slug',$thutu,$anHien,'$lang',$idTL,'$MoTa')";
                   $kq=execute($sql); 
                   header('Location: index.php?page=loaitin'); die();
             }

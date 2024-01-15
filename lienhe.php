@@ -1,5 +1,24 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<form method="post" class="my-4 col-8 m-auto">
+    <h4>LIÊN HỆ QUẢN TRỊ</h4>
+    <p class="mb-3">
+        <span>Họ tên của bạn</span>
+        <input class="form-control" name="hoten">
+    </p>
+    <p class="mb-3">
+        <span>Email của bạn</span>
+        <input class="form-control" name="email">
+    </p>
+    <p class="mb-3">        
+        <textarea class="form-control" name="noidung" rows="5"></textarea>
+    </p>
+    <p class="mb-3">
+        <button type="submit" name="guilienhe" class="btn btn-success">Gửi liên hệ</button>
+    </p>
+</form>
 <?php
+
 function goimail($to, $to_name, $subject, $noidungthu){ 
     require "PHPMailer-master/src/PHPMailer.php";  //nhúng thư viện vào để dùng, sửa lại đường dẫn cho đúng nếu bạn lưu vào chỗ khác
     require "PHPMailer-master/src/SMTP.php"; //nhúng thư viện vào để dùng
@@ -53,20 +72,4 @@ if (isset($_POST['guilienhe'])==true){
     goimail($to, $to_name, $subject, $noidungthu);
 }
 ?>
-<form method="post" class="col-8 m-auto">
-    <h4>LIÊN HỆ QUẢN TRỊ</h4>
-    <p class="mb-3">
-        <span>Họ tên của bạn</span>
-        <input class="form-control" name="hoten">
-    </p>
-    <p class="mb-3">
-        <span>Email của bạn</span>
-        <input class="form-control" name="email">
-    </p>
-    <p class="mb-3">        
-        <textarea class="form-control" name="noidung" rows="5"></textarea>
-    </p>
-    <p class="mb-3">
-        <button type="submit" name="guilienhe" class="btn btn-success">Gửi liên hệ</button>
-    </p>
-</form>
+

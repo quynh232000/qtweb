@@ -36,7 +36,7 @@
                         <td>$item[nghe_nghiep]</td>
                         <td>$item[intro]</td>
                         <td>$admin</td>
-                        <td style=\"width:60px\"><a href=\"./user_them_sua.php?idLT=$item[user_id]\"><button class=\"btn btn-warning\"><i class='bx bx-edit-alt'></i></button></a></td>
+                        <td style=\"width:60px\"><a href=\"?page=edituser&id=$item[user_id]\"><button class=\"btn btn-warning\"><i class='bx bx-edit-alt'></i></button></a></td>
                         <td style=\"width:60px\"><button class=\"btn btn-danger\" onclick=\"deleteUser($item[user_id])\"><i class='bx bx-trash'></i></button></td>
                     </tr>";
             }

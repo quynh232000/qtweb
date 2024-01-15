@@ -19,7 +19,7 @@ $result = executeResult($sql);
                 <a class='btn btn-success py-1 px-3' href="<?=BASE_DIR."dang-ky/"?>">Đăng ký</a> &nbsp; 
                 <a class="btn btn-primary ml-3 py-1 px-3" href="admin/">Vào quản trị</a>
             <?php } else { ?>                    
-                   <a class='btn btn-success py-1 px-3' href="#">Chào <?=$_SESSION['un']?></a>  &nbsp; 
+                   <a class='btn btn-success py-1 px-3' href="admin/">Chào <?=$_SESSION['un']?></a>  &nbsp; 
                    <a class="btn btn-primary ml-3 py-1 px-3" href="admin/thoat.php">Thoát</a>
             <?php } ?>
            

@@ -49,7 +49,7 @@ if(isset($_POST['submit'])){
     </style>
 </head>
 <body>
-    <div class="container col-6 m-auto mt-5" style="transform: rotate(-5deg);">
+    <div class="container col-6 m-auto mt-5" style="">
         <h4 class="p-2 text-center bg-success text-white">ĐĂNG NHẬP QUẢN TRỊ WEBSITE</h4>
         <form class="border border-success" action="" method="post" id="login">
             <div class="m-3">

@@ -30,7 +30,7 @@
     <section class="main row">        
         <article class="col-md-9">
         <?php 
-        $arrPage = ['home','tinchitiet', 'tintrongloai','timkiem'];
+        $arrPage = ['home','tinchitiet', 'tintrongloai','timkiem','dangky','lienhe','tinnoibat'];
         if (in_array($page, $arrPage)==true) 
             require_once "./$page.php";
             else "Không tồn tại [page";
