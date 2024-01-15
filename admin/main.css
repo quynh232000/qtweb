@@ -1,0 +1,254 @@
+body{
+    width: 100%;
+    min-height:100vh;
+    background: #ccc;
+}
+
+.container{
+    margin: auto;
+    margin-top: 10px;
+    width: 1200px;
+    padding: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 6px 2px rgba(0, 0, 0, 0.372) ;
+}
+
+.container h2{
+    background: rgb(0, 128, 58);
+    color: #fff;
+}
+.container .info{
+    border: 1px solid rgb(0, 128, 58) ;
+    border-radius: 8px ;
+    padding:  5px;
+
+}
+.info p{
+    margin: 10px 0;
+}
+.info select{
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+}
+.line{
+    display: flex;
+    margin-bottom: 10px;
+}
+label{
+    min-width: 120px;
+    font-weight: 700;
+    margin: 0;
+}
+.form-line{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+   margin: 5px 0;
+}
+.form-line.active{
+    flex-wrap: wrap;
+}
+.form-line input{
+    width: 100%;
+    height: 36px; 
+    padding: 0 10px;
+    border:  1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    border: 1px double #333;
+    border-radius:  3px;
+    outline: none;
+}
+.form-line input[type=checkbox],
+.form-line input[type=radio]{
+    height: 16px;
+    margin-left: 20px;
+    width: 16px;
+}
+.form-line.active label{
+    width: 100%;
+    margin-bottom: 3px;
+}
+.form-line textarea{
+    width: 100%;
+    height: 60px;
+}
+
+
+.postList {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .postList .post {
+    width: calc(33% - 6px);
+    margin: 8px 0;
+    background: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.272) ;
+  }
+  .post.b4{
+      width: 48%;
+  }
+  .post-img {
+    width: 100%;
+    height: 220px;
+  }
+  .post-img.detail{
+      height: auto;
+  }
+  .post-img.detail img{
+      width: 100%;
+      height: auto;
+  }
+  .post-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .info-1 {
+    padding: 8px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .title{
+    padding: 0 5px;
+    
+
+  }
+  .title h5{
+    font-weight: 600;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+  }
+  .title h4{
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+  }
+ .title h3{
+    font-weight: 600;
+     font-size: 24px;
+ }
+  .content.p{
+    padding: 0 5px;
+    text-align: justify;
+    font-size: 14px;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 3;
+  }
+  .content img{
+      width: 100%;
+      height: auto;
+  }
+
+  /* Phần css cho header search */
+  .headerC{
+    position: relative;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-handel{
+    display: flex;
+    align-items: center;
+}
+.header-info{
+    display: flex;
+    align-items: center;
+}
+.header-info .logo {
+    height: 80%;
+    width: 140px;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    margin-right: 10px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.search-area{
+  position: absolute;
+  top: 110%;
+  right: 40px;
+  width: 500px;
+  padding-bottom: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.272) ;
+  z-index: 10;
+  display: none;
+} 
+.search-area h4{
+    padding: 5px;
+    text-align: center;
+}
+.search-area.active{
+    display: block;
+}
+.list-Search{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    max-height: 300px;
+    overflow: auto;
+}
+.list-Search::-webkit-scrollbar{
+    width: 2px;
+}
+
+.list-Search .item{
+     display: flex;
+     padding: 4px 0;
+     color: #333;
+     
+}
+.list-Search .item img{
+    height:50px;
+    width: 60px;
+    margin-right: 5px;
+}
+.list-Search .item h6,span{
+    margin: 0;
+     display: block;
+     display: -webkit-box;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: normal;
+     -webkit-line-clamp: 1;
+}
+
+.error-msg{
+    width: 100%;
+    text-align: center;
+    color: rgb(92, 2, 2);
+    background:rgba(218, 77, 77, 0.729);
+    border-radius: 5px;
+    
+    margin: 5px 0;
+    font-weight: 600;
+}
